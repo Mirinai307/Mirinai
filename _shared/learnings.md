@@ -20,3 +20,8 @@
 ---
 
 <!-- 이 아래부터 교훈 추가 -->
+
+## [2026-06-25] insane-search 설치
+**교훈**: 원격 컨테이너에서 git proxy가 허용하지 않는 외부 GitHub 레포는 `curl -L <zip-url>`로 zip을 받아 unzip 후 로컬 마켓플레이스로 등록하면 Claude Code 플러그인 설치 가능.
+**근거**: git proxy는 `Mirinai307/Mirinai`만 허용하지만 HTTPS proxy는 GitHub 도메인의 파일 다운로드를 허용한다. `claude plugin marketplace add <local-path>` → `claude plugin install <name>@<marketplace>` 순서로 설치.
+**worker**: orchestrator
