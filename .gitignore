@@ -24,3 +24,9 @@ tasks/*
 # 프로젝트 특화 교훈 — 작성자 사적 누적물, git 추적 안 함 (폴더만 유지)
 _local/*
 !_local/.gitkeep
+
+# 기획안 배포본 — md2docx.js 실행 결과물, git 추적 안 함
+dist/
+
+# Node 의존성
+node_modules/
